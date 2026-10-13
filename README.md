@@ -1,13 +1,13 @@
 # WHITE ALBUM2 macOS 移植源码
 
-基于 [dorakyuraduang/wa2-godot](https://github.com/dorakyuraduang/wa2-godot) 的
-`4fc5a89274d9d0dcfcb2e39ead92353ef1422c4c`，包含 macOS 原生菜单、键盘操作、资源加载与本地构建工具。
+基于 [dorakyuraduang/wa2-godot](https://github.com/dorakyuraduang/wa2-godot) 
+包含 macOS 原生菜单、键盘操作、资源加载与本地构建工具。
 Godot 工程在 `WA2-macOS-local/source/`。这是用于搭配用户自备游戏数据的源码仓库。
 
 仓库只接纳源码、Godot 场景／着色器／动画配置、资源恢复工具，以及有许可的 Noto 字体和许可证。
 Windows 程序、游戏 PAK／脚本、图像、声音、影片、原作字体、混合来源字幕、原版图标、
 存档、完整安装包和本机验证记录均在 Git 排除范围内。
-本地 `final-installer/` 是包含游戏资源的个人安装包，不是可公开发布的仓库产物。
+本地 `final-installer/` 是需要用户自备的win版游戏文件。
 
 ## 使用自己的游戏文件构建
 
@@ -35,7 +35,7 @@ bash tools/build_macos.sh
 首次影片转换需要时间和额外磁盘空间。编译前请为 Godot 安装同版本 macOS 导出模板。
 
 混合来源字幕不随源码提供。准备工具在缺少本地字幕时生成空字幕配置，游戏本身的对白仍由用户数据加载。
-有权使用的补充字幕可自行放入本地 `assets/sub.yaml`，该文件始终被 Git 排除。
+有权使用的补充字幕可自行放入本地 `assets/sub.yaml`。
 
 构建后解压 `build/WHITE ALBUM2-macOS-final.zip`，将生成的 `Wa2Res/` 放在 app 旁边，
 或使用 `--resource-dir` 指定它。完整含资源应用只供用户本地使用，不应作为仓库 Release 上传。
@@ -43,11 +43,8 @@ bash tools/build_macos.sh
 
 ## Git 作者和资源检查
 
-本项目以源码快照方式建立，未导入上游 Git 历史。来源和本地修改记录在 `NOTICE`、`CHANGES.md`。
-远程仓库为 `NRPaladin/wa2-macos`，保持 Private；首批源码须经过维护者确认后才推送。
-本地 Codex 复核快照不会作为 Git 分支／标签上传。
 
-仓库级身份为 `NRPaladin` / `171237289+NRPaladin@users.noreply.github.com`，全局 Git 设置不变。
+
 根目录 `.gitignore` 使用明确的组件范围；`tools/verify_repository.py` 会继续检查文件路径、
 暂存 blob、私钥和个人机器路径。这个检查不代替文件许可证和版权来源核对。
 
