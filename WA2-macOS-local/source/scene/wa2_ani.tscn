@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bugs243iwg2om"]
+; Modified 2026-10-10 for local macOS: resolve resources by portable source paths.
+
+[ext_resource type="Script" path="res://script/Wa2Ani.cs" id="1_qf0l8"]
+[ext_resource type="Texture2D" path="res://assets/grp/スポットライト.png" id="2_70gl8"]
+
+[node name="Wa2Ani" type="Node"]
+script = ExtResource("1_qf0l8")
+path = "res://assets/grp/スポットライト.ani"
+Texture = ExtResource("2_70gl8")

@@ -1,0 +1,41 @@
+wa2-macos component license notice
+
+This repository is a collection of separately licensed components. It is not
+licensed as a single work under MIT.
+
+1. Upstream WA2 Godot implementation and modifications within its code scope
+   License: Apache-2.0.
+   Scope and original notice: WA2-macOS-local/source/PORTING_CODE.md,
+   WA2-macOS-local/source/LICENSE and WA2-macOS-local/source/NOTICE.
+   Full text: WA2-macOS-local/source/LICENSES/Apache-2.0.txt.
+   Preserve upstream copyright, attribution and notices when redistributing.
+
+2. Locally authored macOS preparation, maintenance and verification tools
+   License: MIT; full text in LICENSES/MIT.txt.
+   This covers tools/*.py, .githooks/pre-commit, the locally added files under
+   WA2-macOS-local/source/tools that contain SPDX-License-Identifier: MIT,
+   the root .gitignore/.gitattributes, root README.md/CHANGES.md, and the locally
+   added NuGet.Config/global.json under WA2-macOS-local/source.
+   This grant covers the tool implementation, not data it reads or generates.
+   It does not relicense upstream Apache-2.0 implementation files.
+
+3. Noto Sans CJK SC
+   License: SIL Open Font License 1.1.
+   Font, full license and source: WA2-macOS-local/source/assets/fonts/unicode/.
+   Preserve the font's license and source notices separately from MIT/Apache.
+
+4. Build/runtime dependencies
+   Godot and YamlDotNet retain their MIT licenses; .NET and its third-party
+   components retain their notices. See THIRD_PARTY_NOTICES.md and
+   WA2-macOS-local/source/LICENSES. These terms do not license proprietary data.
+
+5. Proprietary and mixed-source content
+   No rights to WHITE ALBUM2 or AQUAPLUS game software, dialogue, scripts,
+   music, voice, movies, artwork, fonts, icons, trademarks or translation
+   content are granted here. Such files are excluded from this repository.
+   Users must supply their own legally obtained supported game installation.
+   Generating a local image, font atlas or movie does not make it MIT-licensed.
+   Optional mixed-source subtitles are likewise excluded.
+
+This is an unofficial port and is not affiliated with or endorsed by AQUAPLUS.
+See the upstream notices for the exact scope of each component's license.

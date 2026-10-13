@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ccgml2kidjj3u"]
+; Modified 2026-10-10: remove dangling reference to missing, unused Weather.cs.
+; Runtime weather is implemented by Wa2EngineMain and the weather shaders.
+
+[node name="Weather" type="Node2D"]
+position = Vector2(639.25, 356.25)
+scale = Vector2(1279.5, 713.5)

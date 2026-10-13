@@ -1,0 +1,15 @@
+wa2-macos
+Local macOS integration and preparation tools: Copyright 2026 NRPaladin.
+
+Based on dorakyuraduang/wa2-godot, upstream commit
+4fc5a89274d9d0dcfcb2e39ead92353ef1422c4c.
+Source: https://github.com/dorakyuraduang/wa2-godot
+
+The original Apache-2.0 porting-code notice is retained verbatim at
+WA2-macOS-local/source/NOTICE. Modified files are recorded in CHANGES.md.
+Upstream Git history is not imported into this independent source snapshot.
+
+WHITE ALBUM2 and associated game content belong to their respective
+rightsholders. This unofficial source repository does not distribute game
+archives, original/translated scenario text, images, audio, movies, fonts,
+application icons or saves. Users supply required game data separately.
